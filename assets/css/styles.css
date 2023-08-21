@@ -73,6 +73,7 @@ a, h2, h3, h4, h5, h6 {
     cursor: pointer;
     overflow: hidden;
     transition: width 0.25s ease;
+    z-index: 1000;
 }
 
 /* Navigation menu styling */
@@ -87,6 +88,7 @@ a, h2, h3, h4, h5, h6 {
     display: none;
     width: 200px;
     height: auto; /* Adjusts automatically */
+    z-index: 1000;
 }
 
 #nav-menu a {
