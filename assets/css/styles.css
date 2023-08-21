@@ -151,13 +151,9 @@ iframe {
 
 /* Project section styling */
 .projects-section {
-    min-height: 100vh;
-    padding: 20px 10%;
-    background-color: #1D1E23;
-    color: #EAEAEA;
-    display: flex;
-    flex-direction: column;
+    height: 100vh; /* Set height to fit the window */
     align-items: flex-start;
+    justify-content: center;
 }
 
 .projects-section h2 {
@@ -177,12 +173,13 @@ iframe {
 }
 
 .project {
-    flex: 1 0 auto; /* Flex grow, shrink, and basis */
-    min-width: 200px; /* Minimum width for each project */
-    margin: 10px;
+    flex: 1 0 auto;
+    min-width: 150px; 
+    margin: 10px; 
     text-align: center;
     overflow: hidden;
 }
+
 
 .project img {
     width: 100%;
