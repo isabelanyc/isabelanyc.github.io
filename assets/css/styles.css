@@ -102,6 +102,7 @@ a, h2, h3, h4, h5, h6 {
     text-decoration: underline;
 }
 
+/* About section styling */
 .about-section {
     display: flex;
     flex-direction: column;
@@ -169,14 +170,6 @@ iframe {
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.project {
-    position: relative;
-    width: 300px;
-    margin: 20px;
-    text-align: center;
-    overflow: hidden;
-}
-
 .project img {
     width: 100%;
     height: auto;
@@ -223,5 +216,16 @@ iframe {
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; /* Aligns items to the start of the container */
+    justify-content: space-between; /* Ensures equal spacing between items */
+    align-items: flex-start; /* Aligns items to the start of the container */
 }
+
+
+.project {
+    position: relative;
+    width: 300px;
+    margin: 10px 5px; /* Adjust the top/bottom and left/right margins as needed */
+    text-align: center;
+    overflow: hidden;
+}
+
