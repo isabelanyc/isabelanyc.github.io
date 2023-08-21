@@ -35,9 +35,9 @@ a, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     text-align: center;
-    position: relative; /* Relative positioning for navigation */
+    position: relative;
 }
 
 .hero h1 {
@@ -49,16 +49,33 @@ a, h2, h3, h4, h5, h6 {
     font-size: 1.5rem;
 }
 
+/* Navigation button styling */
+.nav-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #FF7043; /* Orange Accent */
+    color: white;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: width 0.5s ease;
+}
+
 /* Navigation menu styling */
 #nav-menu {
     position: absolute;
-    top: 70px; /* Position under the button */
+    top: 70px;
     right: 20px;
     background-color: white;
     color: #333;
     padding: 10px;
     text-align: center;
-    display: none; /* Initially hidden */
+    display: none;
     width: 200px;
 }
 
@@ -73,43 +90,10 @@ a, h2, h3, h4, h5, h6 {
     text-decoration: underline;
 }
 
-
-/* Navigation button styling */
-.nav-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: #FF7043; /* Orange Accent */
-    color: white;
-    padding: 10px;
-    width: 200px; /* Match the width of the navigation menu */
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: width 0.5s ease;
-}
-
-
-.nav-button.expanded {
-    width: 200px; /* Match the width of the navigation menu */
-}
-
 /* Content styling */
 section {
     padding: 20px;
     line-height: 1.6;
-}
-
-/* Link styling inspired by data visualization colors */
-a {
-    color: #0077cc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 /* Iframe styling for the resume */
@@ -117,16 +101,10 @@ iframe {
     border: none;
 }
 
-/* Introduction section styling */
-.intro {
-    padding: 20px;
-    line-height: 1.6;
-}
-
 /* Project section styling */
 .project {
     position: relative;
-    width: 300px; /* Adjust the width as needed */
+    width: 300px;
     margin: 20px;
     text-align: center;
 }
