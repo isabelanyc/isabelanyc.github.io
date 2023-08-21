@@ -4,10 +4,10 @@ function toggleNav() {
     if (navMenu.style.display === 'block') {
         navMenu.style.display = 'none';
         navButton.classList.remove('expanded');
-        navButton.textContent = 'Menu';
+        navButton.textContent = '| | |';
     } else {
         navMenu.style.display = 'block';
         navButton.classList.add('expanded');
-        navButton.textContent = 'Close';
+        navButton.textContent = 'X';
     }
 }
