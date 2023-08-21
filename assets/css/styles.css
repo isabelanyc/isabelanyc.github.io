@@ -21,6 +21,24 @@ h1 {
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Hero section styling */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
 
 /* Navigation menu styling */
 nav {
@@ -48,7 +66,7 @@ nav a:hover {
 .nav-button {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    left: 20px; /* Change to left */
     background-color: #333;
     color: white;
     padding: 10px;
@@ -60,6 +78,7 @@ nav a:hover {
     overflow: hidden;
     transition: width 0.5s ease;
 }
+
 
 .nav-button.expanded {
     width: 200px;
@@ -110,25 +129,7 @@ iframe {
     border: none;
 }
 
-/* Hero section styling */
-.hero {
-    /* ... existing styles ... */
-    position: relative;
-}
 
-.hero img {
-    width: 200px; /* Adjust the size as needed */
-    border-radius: 50%;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin: 20px 0;
-}
-
-.hero p {
-    font-size: 1.5rem;
-}
 
 
 /* Introduction section styling */
