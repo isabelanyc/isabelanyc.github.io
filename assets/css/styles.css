@@ -44,6 +44,51 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Navigation button styling */
+.nav-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: width 0.5s ease;
+}
+
+.nav-button.expanded {
+    width: 200px;
+}
+
+/* Navigation menu styling */
+#nav-menu {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    display: none;
+    width: 200px;
+}
+
+#nav-menu a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+#nav-menu a:hover {
+    text-decoration: underline;
+}
+
 /* Content styling */
 section {
     padding: 20px;
