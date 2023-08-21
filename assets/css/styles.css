@@ -96,31 +96,6 @@ a, h2, h3, h4, h5, h6 {
     width: 200px; /* Match the width of the navigation menu */
 }
 
-/* Navigation menu styling */
-#nav-menu {
-    position: absolute;
-    top: 70px; /* Adjust to match the height of the button */
-    right: 20px;
-    background-color: white; /* Or your chosen color */
-    color: #333; /* Or your chosen color */
-    padding: 10px;
-    text-align: center;
-    display: none; /* Initially hidden */
-    width: 200px; /* Set the width */
-}
-
-#nav-menu a {
-    color: #333;
-    text-decoration: none;
-    display: block;
-    margin: 5px 0;
-    padding: 5px; /* Add padding for better spacing */
-}
-
-#nav-menu a:hover {
-    text-decoration: underline;
-}
-
 /* Content styling */
 section {
     padding: 20px;
