@@ -151,29 +151,42 @@ iframe {
 
 /* Project section styling */
 .projects-section {
+    min-height: 100vh;
+    padding: 20px 10%;
+    background-color: #1D1E23;
+    color: #EAEAEA;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    padding: 20px 10%;
-    background-color: #1D1E23; /* Background color of the section */
-    color: #EAEAEA; /* Primary Text */
-    position: relative;
 }
 
 .projects-section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     padding: 10px;
-    background-color: #FF7043; /* Orange Highlight for the title box */
+    background-color: #FF7043;
     color: #EAEAEA;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    max-width: fit-content;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.project {
+    flex: 1 0 auto; /* Flex grow, shrink, and basis */
+    min-width: 200px; /* Minimum width for each project */
+    margin: 10px;
+    text-align: center;
+    overflow: hidden;
 }
 
 .project img {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 .project .image-container {
@@ -212,24 +225,6 @@ iframe {
 .project:hover .overlay p {
     opacity: 1;
 }
-
-.projects-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10px; /* Adjust the gap between rows and columns */
-}
-
-.project {
-    position: relative;
-    width: calc(25% - 20px); /* 25% for 4 items per row, minus margin */
-    margin: 10px; /* Adjust the margin as needed */
-    text-align: center;
-    overflow: hidden;
-}
-
-
 
 .project a {
     display: block; /* Ensure that the anchor tag takes up the full space */
