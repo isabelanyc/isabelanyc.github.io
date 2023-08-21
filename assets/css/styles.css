@@ -152,21 +152,21 @@ iframe {
 .projects-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
     padding: 20px 10%;
     background-color: #1D1E23; /* Background color of the section */
     color: #EAEAEA; /* Primary Text */
+    position: relative;
 }
 
 .projects-section h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 10px;
     background-color: #3A8DFF; /* Blue Highlight for the title box */
     color: #EAEAEA;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-    text-align: left; /* Align the title to the left */
 }
 
 .project {
@@ -211,4 +211,13 @@ iframe {
 
 .project:hover .overlay p {
     opacity: 1;
+}
+
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #3A8DFF; /* Blue Highlight for the title box */
+    color: #EAEAEA;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
