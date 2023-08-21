@@ -57,13 +57,13 @@ a, h2, h3, h4, h5, h6 {
     background-color: #FF7043; /* Orange Accent */
     color: white;
     padding: 10px;
-    width: 200px;
+    width: 50px; /* Updated width to match height */
     height: 50px;
     text-align: center;
     line-height: 50px;
     cursor: pointer;
     overflow: hidden;
-    transition: width 0.5s ease;
+    transition: width 0.25s ease;
 }
 
 /* Navigation menu styling */
