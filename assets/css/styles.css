@@ -223,5 +223,5 @@ iframe {
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start; /* Aligns items to the start of the container */
 }
