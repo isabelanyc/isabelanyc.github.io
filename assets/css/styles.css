@@ -164,7 +164,7 @@ iframe {
     font-size: 2rem;
     margin-bottom: 20px;
     padding: 10px;
-    background-color: #3A8DFF; /* Blue Highlight for the title box */
+    background-color: #FF7043; /* Orange Highlight for the title box */
     color: #EAEAEA;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
@@ -218,4 +218,10 @@ iframe {
 
 .project:hover .overlay p {
     opacity: 1;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
