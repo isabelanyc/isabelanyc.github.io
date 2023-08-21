@@ -5,7 +5,7 @@ body, h1, h2, p, a {
     font-family: Arial, sans-serif;
 }
 
-/* Background color inspired by engineering blueprints */
+/* Background color */
 body {
     background-color: #1D1E23;
     color: #EAEAEA;
@@ -23,10 +23,6 @@ h1 {
 
 a, h2, h3, h4, h5, h6 {
     color: #3A8DFF; /* Blue Highlight */
-}
-
-.nav-button, .button, .icon {
-    background-color: #FF7043; /* Orange Accent */
 }
 
 .secondary-text {
@@ -83,10 +79,10 @@ a, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: #333;
+    background-color: #FF7043; /* Orange Accent */
     color: white;
     padding: 10px;
-    width: 50px;
+    width: 200px; /* Match the width of the navigation menu */
     height: 50px;
     text-align: center;
     line-height: 50px;
@@ -95,6 +91,7 @@ a, h2, h3, h4, h5, h6 {
     transition: width 0.5s ease;
 }
 
+
 .nav-button.expanded {
     width: 200px; /* Match the width of the navigation menu */
 }
@@ -102,10 +99,10 @@ a, h2, h3, h4, h5, h6 {
 /* Navigation menu styling */
 #nav-menu {
     position: absolute;
-    top: 70px;
+    top: 70px; /* Adjust to match the height of the button */
     right: 20px;
-    background-color: white;
-    color: #333;
+    background-color: white; /* Or your chosen color */
+    color: #333; /* Or your chosen color */
     padding: 10px;
     text-align: center;
     display: none; /* Initially hidden */
