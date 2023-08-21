@@ -218,16 +218,19 @@ iframe {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 10px; /* Adjust the gap between rows and columns */
+    align-content: flex-start; 
+    gap: 10px;
 }
 
 .project {
     position: relative;
     width: 300px;
-    margin: 0; /* Remove any additional margin */
+    height: 400px; /* Set a specific height */
+    margin: 10px;
     text-align: center;
     overflow: hidden;
 }
+
 
 .project a {
     display: block; /* Ensure that the anchor tag takes up the full space */
