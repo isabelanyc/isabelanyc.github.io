@@ -11,6 +11,15 @@ body {
     color: #EAEAEA;
 }
 
+section {
+    min-height: 100vh; /* Takes up the entire screen height */
+    padding: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* Main header with a subtle shadow */
 h1 {
     font-size: 2.5rem;

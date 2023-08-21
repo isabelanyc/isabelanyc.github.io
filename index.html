@@ -5,21 +5,47 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+    <div class="nav-button" onclick="toggleNav()">| | |</div>
+    <nav id="nav-menu">
+        <a href="#about">About Me</a>
+        <a href="#projects.html">Projects</a>
+        <a href="assets/files/CaetanoResume2022.pdf">Resume</a>
+        <a href="#blog.html">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <div class="hero">
         <h1>Isabela Caetano</h1>
         <p>Data Scientist | Engineer</p>
         <p>🗽</p>
-        <div class="nav-button" onclick="toggleNav()">| | |</div>
-        <nav id="nav-menu">
-            <a href="index.html">Home</a>
-            <a href="pages/about.html">About Me</a>
-            <a href="pages/projects.html">Projects</a>
-            <a href="pages/resume.html">Resume</a>
-            <a href="pages/blog.html">Blog</a>
-            <a href="pages/contact.html">Contact</a>
-        </nav>
     </div>
-    <!-- Rest of the content -->
+
+    <section id="about">
+        <!-- About Me content -->
+    </section>
+
+    <section id="projects">
+        <!-- Projects content -->
+        <section class="project">
+            <a href="../projects/ice-cream-reviews.html">
+                <img src="../assets/images/ben_jerry.jpeg" alt="Ice Cream Reviews">
+                <div class="overlay">
+                    <p>An analysis of ice cream reviews using data science techniques.</p>
+                </div>
+                <h3>NLP With Ice Cream Reviews</h3>
+            </a>
+        </section>
+        
+    </section>
+ 
+    <section id="blog">
+        <!-- Blog content -->
+    </section>
+
+    <section id="contact">
+        <!-- Contact content -->
+    </section>
+
     <script src="assets/js/main.js"></script>
 </body>
 </html>
