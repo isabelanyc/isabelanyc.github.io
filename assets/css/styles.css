@@ -60,7 +60,7 @@ a, h2, h3, h4, h5, h6 {
 
 /* Navigation button styling */
 .nav-button {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
     background-color: #FF7043; /* Orange Accent */
@@ -78,7 +78,7 @@ a, h2, h3, h4, h5, h6 {
 
 /* Navigation menu styling */
 #nav-menu {
-    position: absolute;
+    position: fixed;
     top: 70px;
     right: 20px;
     background-color: white;
