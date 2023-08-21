@@ -174,12 +174,19 @@ iframe {
     width: 300px;
     margin: 20px;
     text-align: center;
+    overflow: hidden;
 }
 
 .project img {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.project .image-container {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
 }
 
 .project .overlay {
