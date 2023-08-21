@@ -21,25 +21,22 @@ h1 {
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Navigation bar with a sleek design */
+/* Navigation styling */
 nav {
     background-color: #333;
-    overflow: hidden;
     color: white;
+    padding: 10px;
+    text-align: center;
 }
 
 nav a {
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+    margin: 0 15px;
 }
 
 nav a:hover {
-    background-color: #ddd;
-    color: black;
+    text-decoration: underline;
 }
 
 /* Content styling */
@@ -65,25 +62,28 @@ iframe {
 
 /* Hero section styling */
 .hero {
-    background: url('../assets/images/background.jpg') no-repeat center center fixed; /* Replace with your background image */
-    background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #f0f0f0;
+}
+
+.hero img {
+    width: 200px; /* Adjust the size as needed */
+    border-radius: 50%;
 }
 
 .hero h1 {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .hero p {
     font-size: 1.5rem;
 }
+
 
 /* Introduction section styling */
 .intro {
