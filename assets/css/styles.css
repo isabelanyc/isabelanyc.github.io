@@ -212,12 +212,3 @@ iframe {
 .project:hover .overlay p {
     opacity: 1;
 }
-
-#projects h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #3A8DFF; /* Blue Highlight for the title box */
-    color: #EAEAEA;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-}
