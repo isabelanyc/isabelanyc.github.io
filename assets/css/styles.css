@@ -118,13 +118,14 @@ a, h2, h3, h4, h5, h6 {
     background-color: #3A8DFF; /* Blue Highlight for the title box */
     color: #EAEAEA;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    max-width: fit-content; 
 }
 
 .about-section p {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.2rem; /* Increase the font size */
+    line-height: 1.8; /* Increase the line height for more vertical spacing */
     margin-bottom: 20px;
-    max-width: 600px;
+    
 }
 
 .about-section .about-image {
@@ -227,9 +228,11 @@ iframe {
 }
 
 .about-section, .projects-section, .contact-section {
-    padding: 20px 10%; /* Adjust the padding as needed */
-    height: 100vh;
+    padding: 20px 10%;
+    min-height: 100vh; /* Minimum height equal to the viewport height */
+    height: auto; /* Allow the sections to expand based on content */
 }
+
 
 .projects-section {
     margin-bottom: 20px; /* Adjust the bottom margin as needed */
