@@ -151,30 +151,30 @@ iframe {
 
 /* Project section styling */
 .projects-section {
-    height: 100vh; /* Set height to fit the window */
+    height: 100vh; 
     align-items: flex-start;
     justify-content: center;
 }
+
 
 .projects-section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     padding: 10px;
-    background-color: #FF7043;
+    background-color: #FF7043; 
     color: #EAEAEA;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-    max-width: fit-content;
+    max-width: fit-content; 
 }
 
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around; /* Change to space-around for even spacing */
 }
 
 .project {
-    flex: 1 0 auto;
-    min-width: 150px; 
+    flex: 1 0 calc(25% - 20px); 
     margin: 10px; 
     text-align: center;
     overflow: hidden;
@@ -225,4 +225,18 @@ iframe {
 
 .project a {
     display: block; /* Ensure that the anchor tag takes up the full space */
+}
+
+.about-section, .projects-section, .contact-section {
+    padding: 20px 10%; /* Adjust the padding as needed */
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #3A8DFF; 
+    color: #EAEAEA;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    max-width: fit-content; 
 }
