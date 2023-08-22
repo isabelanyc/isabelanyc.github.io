@@ -12,7 +12,6 @@ body {
 }
 
 section {
-    min-height: 100vh; /* Takes up the entire screen height */
     padding: 20px;
 }
 
@@ -47,6 +46,7 @@ a, h2, h3, h4, h5, h6 {
     height: 100vh;
     text-align: center;
     position: relative;
+    height: 100vh;
 }
 
 .hero h1 {
@@ -151,6 +151,7 @@ iframe {
 
 /* Project section styling */
 .projects-section {
+    height: 100vh;
     align-items: flex-start;
     justify-content: center;
 }
@@ -167,13 +168,14 @@ iframe {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Columns with a minimum width of 200px */
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr)); /* Columns with a minimum width of 200px */
     grid-template-rows: 300px; /* Fixed height for each row */
     gap: 10px 5px; /* 15px vertical and 10px horizontal spacing */
 }
 
 .project {
-    width: 200px; /* Fixed width for each project */
+    width: 400; /* Fixed width for each project */
+    height: auto;
     text-align: center;
     overflow: hidden;
 }
@@ -203,7 +205,6 @@ iframe {
     align-items: center; /* Center content vertically */
 }
 
-
 .project:hover .overlay {
     background-color: rgba(128, 128, 128, 0.7);
 }
@@ -228,9 +229,13 @@ iframe {
     color: #EAEAEA; /* Set the text color to white */
 }
 
-
 .about-section, .projects-section, .contact-section {
     padding: 20px 10%; /* Adjust the padding as needed */
+    height: 100vh;
+}
+
+.projects-section {
+    margin-bottom: 20px; /* Adjust the bottom margin as needed */
 }
 
 .contact-section h2 {
