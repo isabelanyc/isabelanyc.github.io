@@ -104,13 +104,10 @@ a, h2, h3, h4, h5, h6 {
 
 /* About section styling */
 .about-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    min-height: 100vh; /* Minimum height of the viewport */
     padding: 20px 10%;
-    background-color: #1D1E23; /* Background color of the section */
-    color: #EAEAEA; /* Primary Text */
+    background-color: #1D1E23;
+    color: #EAEAEA;
     position: relative;
 }
 
