@@ -12,4 +12,6 @@ function toggleNav() {
     }
 }
 
-document.querySelector('.project-entry').innerHTML += '<p>Date: ' + new Date().toLocaleDateString() + '</p>';
+document.querySelectorAll('.project-entry').forEach(entry => {
+    entry.innerHTML += '<p>Date: ' + new Date().toLocaleDateString() + '</p>';
+});
