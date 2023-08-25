@@ -15,13 +15,55 @@
         </p>
         
         <p class="entry-description">
-            The Digikey RAG project aims to leverage the power of LLMs for easier search and queries of electronics parts found on Digikey.
-            This is my first time playing around with PDFs so we'll see how this goes.
+            The idea for this project has been floating around in my head for a while, but I had no idea how to start with out creating some complex deep learning model myself. However, with the introduction of foundation models, it seems like this more doable than ever for me.
+            The idea of this project is the take electronic datasheets and use them for Retrieval Augmented Generation.
+            The value of this would hopefully be realized by some sort of chatbot that electronics engineers and like could use to quickly make queries about parts, specs, pricing, creating a BOM, etc.
+        </p>
+
+        <p class="entry-description">
+            The process of RAG is simplier than it sounds. 
+            What is really boils down to is calculating the "similarity" of the user's query against and existing knowledge base. 
+            The best diagram I found for this was in a Llama Index webinar:
+        </p>
+
+        <div class="image-container">
+            <img src="../../../assets/images/entries/rag.png" alt="rag" class="entry-image">
+        </div>
+
+        <p class="entry-description">
+            The tricky part of this project for me isn't the implementation of the LLM or the vector database.
+            The hard part so far has been the knowledge base. Gathering all the PDFs has been a real pain, but I managed to find a way to gather some datasheets using the Digikey API and a python wrapper that someone built on top of it.
+            So far I collected a few datasheets based off of a keyword search for resistors and capacitors. But now comes the even more complicated part, dealing with the actual PDFs.
+        </p>
+
+        <p class="entry-description">
+            You see, PDFs, as nice as they are, aren't exactly machine readable so feeding them into a vector database can be kind of complicated. 
+            I'm using Chroma and LangChain to hadle the data loading, but I've found a lot of the PDF loaders to be a real pain.
+            So I created a simple work around by converting the PDFs into .txt files myself. 
+            I used PyPDF2 and tabula to handle the text and tables. 
+            Although, from the results I've seen so far, the tables are not looking great either.
+            I think the main issue is that datasheets are pretty complex, there are tables, text, images, equations, etc. 
+            Trying to extract all this infomation is troublesome.
+            Not sure if I want to go back and play around with the PDF loaders some more or see what else is out there that can convert the PDFs before hand and then using a differnt lodaer with LangChain. 
+            But for now, this will suffice.
+        </p>
+
+        <p class="entry-description">
+            The querying portion of the project also has some basic functionality.
+            Everything works, but I'm running into issues with the size of the context window.
+            I haven't looked into it too much but I think it probably has to do with the chunk size from the files.
+        </p>
+
+        <p class="entry-description">
+            I intend to spend more of time preparing the knowledge base and working on loading the data.
+            If I don't get that right, the whole foundation for this project kind of fall apart. 
+            Bad data will make for bad output. Garbage in, garbage out.
         </p>
 
     </div>
     
     <a href="../digikey-rag.html" class="back-to-home"></a>
 
+    
 </body>
 </html>
