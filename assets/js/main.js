@@ -11,3 +11,5 @@ function toggleNav() {
         navButton.textContent = 'X';
     }
 }
+
+document.querySelector('.project-entry').innerHTML += '<p>Date: ' + new Date().toLocaleDateString() + '</p>';
