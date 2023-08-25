@@ -280,3 +280,93 @@ iframe {
 .contact-icons img:hover {
     transform: scale(1.1); /* Slightly enlarge the icons on hover */
 }
+
+.project-description {
+    margin: 0 auto; /* Center the container */
+    max-width: 60%; /* Set the maximum width to 60% of the container */
+    text-align: left; /* Left align the text */
+    font-size: 18px; /* Increase the text size */
+    line-height: 1.5; /* Increase the line spacing */
+}
+
+.project-header {
+    background-color: #FF7043; /* Orange Accent */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif; /* Same font as other elements */
+    font-size: 2rem;
+    font-weight: bold; /* Make the text bolder */
+    margin: 20px auto;
+    max-width: fit-content;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+}
+
+.project-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.project-page-entry {
+    max-width: 60%;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 10px 375px; /* Increase the left and right margins */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.back-to-home {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #FF7043; /* Orange color */
+    border-radius: 50%; /* Makes it a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.back-to-home::before {
+    content: '\2190'; /* Left arrow character */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.entry-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.entry-description {
+    margin: 0 auto; /* Center the container */
+    max-width: 60%; /* Set the maximum width to 60% of the container */
+    text-align: left; /* Left align the text */
+    font-size: 18px; /* Increase the text size */
+    line-height: 1.5; /* Increase the line spacing */
+}
+
+.entry-header {
+    color: #3A8DFF; /* Blue Accent */
+    text-align: center;
+    font-family: Arial, sans-serif; /* Same font as other elements */
+    font-size: 2rem;
+    font-weight: bold; /* Make the text bolder */
+    margin: 60px auto;
+}
+
+.entry-description.date {
+    margin-bottom: 30px;
+}

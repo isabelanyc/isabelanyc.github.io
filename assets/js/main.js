@@ -11,7 +11,3 @@ function toggleNav() {
         navButton.textContent = 'X';
     }
 }
-
-document.querySelectorAll('.project-entry').forEach(entry => {
-    entry.innerHTML += '<p>Date: ' + new Date().toLocaleDateString() + '</p>';
-});
