@@ -370,3 +370,16 @@ iframe {
 .entry-description.date {
     margin-bottom: 30px;
 }
+
+.image-container {
+    width: 100%; /* Full width of the parent container */
+    height: auto; /* Automatically adjust the height based on the image */
+    text-align: center;
+    margin-top: 20px; /* Add some space above the image */
+}
+
+/* Make the image smaller */
+.entry-image {
+    max-width: 40%; /* Adjust the width to scale down the image */
+    height: auto;
+}
