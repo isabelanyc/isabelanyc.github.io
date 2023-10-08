@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDFs are hard</title>
+    <link rel="stylesheet" href="../../../assets/css/styles.css">
+</head>
+<body>
+    <div class="entry-header">PDFs are hard</div>
+    
+    <div class="entry-page-container">
+        <p class="entry-description date">
+            October 8th, 2023
+        </p>
+        
+        <p class="entry-description">
+            I have fiddled around with the PDF processing a bit. After gathering some PDFs for the knowledge base, I thought using the directory loader from LangChain would suffice as enough.
+            It was not. I ran into many issues with files being corrupted, which to me did not make a ton of sense since I could easily view those corrupted files on my system.
+            From there, I realized that I needed to process all the PDFs before even feeding them into the loader.
+        </p>
+        <p class="entry-description">
+            The first step in the PDF processing was to check if each file is even a valid pdf file or not. It goes a little something like this: if the file has a valid .pdf extension, then grab the path of the pdf, and see if it has 1 or more pages.
+            If it does have one or  o
+        </p>
+
+        <div class="image-container">
+            <img src="../../../assets/images/entries/rag.png" alt="rag" class="entry-image">
+        </div>
+
+    </div>
+    
+    <a href="../digikey-rag.html" class="back-to-home"></a>
+
+    
+</body>
+</html>
